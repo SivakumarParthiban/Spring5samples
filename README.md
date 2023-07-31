@@ -1,4 +1,4 @@
-# Spring5samples
+# Spring5 Sample
 
 This sample was created using
 
