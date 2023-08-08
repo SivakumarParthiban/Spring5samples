@@ -50,6 +50,21 @@ public class Publisher {
 		return Objects.hash(ids);
 	}
 
+	public Publisher() {
+		super();
+	}
+
+	public Publisher(Long ids, String name, String addressLine1, String city, String state, String zipcode) {
+		super();
+		this.ids = ids;
+		this.name = name;
+		this.addressLine1 = addressLine1;
+		this.city = city;
+		this.state = state;
+		this.zipcode = zipcode;
+		this.books=books;
+	}
+
 
 	
 	

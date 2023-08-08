@@ -35,12 +35,6 @@ public class Book {
 	@ManyToOne
 	private Publisher publisher;
 
-	public Book(String title, String isbn) {
-		super();
-		this.title = title;
-		this.isbn = isbn;
-		this.authors = authors;
-	}
 
 	public Book() {
 		super();
@@ -61,6 +55,13 @@ public class Book {
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
+	}
+
+	public Book( String title, String isbn, Publisher publisher) {
+		super();
+		this.title = title;
+		this.isbn = isbn;
+		this.publisher = publisher;
 	}
 
 
